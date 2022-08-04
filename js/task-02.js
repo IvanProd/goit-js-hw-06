@@ -10,13 +10,16 @@ const ingredients = [
 const findElemet = document.getElementById("ingredients");
 console.log(findElemet);
 
-const listIngredients = ingredients.forEach(function listItems(item){
+const listIngredients = ingredients.map(function listItems(item){
   const element = document.createElement("li");
-  element.textContent = item;
+  const textEl = document.createElement("p");
+  textEl.textContent = item;
+  element.append(textEl);
   element.classList.add("item");
-  findElemet.append(element);
-  //
+  //console.log(element);
+  return element;
 });
 
-//console.log(listIngredients)  
-//findElemet.insertAdjacentHTML("afterbegin", listIngredients)
+console.log(listIngredients);  
+
+findElemet.append( ...listIngredients);

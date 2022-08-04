@@ -1,4 +1,4 @@
-"user strict"
+
 
 const numberOfCategofies = document.querySelectorAll(".item");
 console.log("Number of categories:", numberOfCategofies.length);
