@@ -4,8 +4,8 @@ const numberOfCategofies = document.querySelectorAll(".item");
 console.log("Number of categories:", numberOfCategofies.length);
 
 numberOfCategofies.forEach(function itemAtribut(item) {
-    const title = item.firstElementChild.textContent;
-    const countItems = item.lastElementChild.children.length;
+    const title = item.querySelector("h2").textContent;
+    const countItems = item.querySelectorAll("li").length;
     /*const category = {
         Category: title,
         Elements: countItems,
