@@ -5,7 +5,7 @@ console.log("Number of categories:", numberOfCategofies.length);
 
 numberOfCategofies.forEach(function itemAtribut(item) {
     const title = item.firstElementChild.textContent;
-    const countItems = item.children.length;
+    const countItems = item.lastElementChild.children.length;
     /*const category = {
         Category: title,
         Elements: countItems,
