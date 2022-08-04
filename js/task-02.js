@@ -20,6 +20,5 @@ const listIngredients = ingredients.map(function listItems(item){
   return element;
 });
 
- 
 
 findElemet.append( ...listIngredients);
