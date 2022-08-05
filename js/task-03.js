@@ -13,4 +13,18 @@ const images = [
   },
 ];
 
+const gallery = document.querySelector('.gallery');
 
+
+const createGallery = (elements) => {
+  return elements.reduce((acc, el) => {
+    const item = `<li><img src='${el.url} alt='${el.alt}''></img></li>`;
+    return acc + item;
+  }, '');
+};
+
+const imageEl = createGallery(images);
+gallery.insertAdjacentHTML('afterbegin', imageEl);
+
+
+//c

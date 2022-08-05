@@ -22,3 +22,19 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+img{
+  height: 350px;
+  border: 5px solid rgb(111, 128, 65);
+}
+
+.gallery{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 30px;
+  list-style: none;
+
+  border: 1px solid green;
+}
