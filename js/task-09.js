@@ -14,7 +14,6 @@ function colorChangeHendle(event){
   refs.body.setAttribute('style', `background-color: ${getRandomHexColor()}`);
   refs.colorSpan.textContent = `- ${getRandomHexColor()}`;
   refs.colorSpan.value = getRandomHexColor();
-
 };
 
 
