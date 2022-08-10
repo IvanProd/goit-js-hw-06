@@ -10,10 +10,12 @@ const refs= {
 
 refs.colorChangeButton.addEventListener('click', colorChangeHendle);
 
+const color = getRandomHexColor();
+
 function colorChangeHendle(event){
-  refs.body.setAttribute('style', `background-color: ${getRandomHexColor()}`);
-  refs.colorSpan.textContent = `-${getRandomHexColor()}`;
-  refs.colorSpan.value = getRandomHexColor();
+  refs.body.setAttribute('style', `background-color: ${color}`);
+  refs.colorSpan.textContent = `-${color}`;
+  refs.colorSpan.value = color;
 };
 
 

@@ -2,13 +2,16 @@ const inputCheck = document.querySelector("#validation-input");
 const inputLength = Number(inputCheck.dataset.length);
 console.log(inputLength);
 
+function classChange(fisrtClass, secondClass){
+  inputCheck.classList.add(fisrtClass) ||
+      inputCheck.classList.replace(secondClass, fisrtClass);
+}
+
 const validateInput = (event) => {
   if (event.target.value.length !== inputLength) {
-    inputCheck.classList.add("invalid") ||
-      inputCheck.classList.replace("valid", "invalid");
+    classChange("invalid", "valid");
   } else
-    inputCheck.classList.add("valid") ||
-      inputCheck.classList.replace("invalid", "valid");
+    classChange("valid", "invalid");
 };
 
 inputCheck.addEventListener("blur", validateInput);
